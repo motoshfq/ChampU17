@@ -690,7 +690,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(heading, {
                 scrollTrigger: {
                     trigger: heading,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => heading.classList.add('animated')
                 }
@@ -703,7 +703,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(text, {
                 scrollTrigger: {
                     trigger: text,
-                    start: "top 85%",
+                    start: "top 100%",
                     onEnter: () => {
                         text.classList.add('animated');
                         // Добавляем задержку для каждого следующего параграфа
@@ -721,7 +721,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(aboutTitle, {
                 scrollTrigger: {
                     trigger: aboutTitle,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => aboutTitle.classList.add('animated')
                 }
@@ -734,7 +734,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(titleAccent, {
                 scrollTrigger: {
                     trigger: titleAccent,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => titleAccent.classList.add('animated')
                 }
@@ -747,7 +747,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(aboutStats, {
                 scrollTrigger: {
                     trigger: aboutStats,
-                    start: "top 85%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => aboutStats.classList.add('animated')
                 }
@@ -760,7 +760,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(aboutImage, {
                 scrollTrigger: {
                     trigger: aboutImage,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => aboutImage.classList.add('animated')
                 }
@@ -773,7 +773,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(aboutBadge, {
                 scrollTrigger: {
                     trigger: '.about-image',
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => aboutBadge.classList.add('animated')
                 }
@@ -787,7 +787,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(event, {
                 scrollTrigger: {
                     trigger: event,
-                    start: "top 85%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз при первом скролле
                     onEnter: () => {
                         event.classList.add('animated');
@@ -841,7 +841,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(venueDetails, {
                 scrollTrigger: {
                     trigger: venueDetails,
-                    start: "top 80%",
+                    start: "top 100%",
                     onEnter: () => venueDetails.classList.add('animated')
                 }
             });
@@ -853,7 +853,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(venueMap, {
                 scrollTrigger: {
                     trigger: venueMap,
-                    start: "top 80%",
+                    start: "top 100%",
                     onEnter: () => venueMap.classList.add('animated')
                 }
             });
@@ -865,7 +865,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(card, {
                 scrollTrigger: {
                     trigger: card,
-                    start: "top 85%",
+                    start: "top 100%",
                     onEnter: () => {
                         card.classList.add('animated');
                         
@@ -891,7 +891,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(socialCta, {
                 scrollTrigger: {
                     trigger: socialCta,
-                    start: "top 85%",
+                    start: "top 100%",
                     onEnter: () => {
                         socialCta.classList.add('animated');
                         
@@ -923,7 +923,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(section, {
                 scrollTrigger: {
                     trigger: section,
-                    start: "top 80%",
+                    start: "top 100%",
                     onEnter: () => section.classList.add('visible')
                 }
             });
@@ -935,7 +935,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(box, {
                 scrollTrigger: {
                     trigger: box,
-                    start: "top 85%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => box.classList.add('animated')
                 }
@@ -948,7 +948,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(scheduleTitle, {
                 scrollTrigger: {
                     trigger: scheduleTitle,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => scheduleTitle.classList.add('animated')
                 }
@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(scheduleTitleAccent, {
                 scrollTrigger: {
                     trigger: scheduleTitleAccent,
-                    start: "top 80%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => scheduleTitleAccent.classList.add('animated')
                 }
@@ -974,7 +974,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gsap.to(button, {
                 scrollTrigger: {
                     trigger: button,
-                    start: "top 85%",
+                    start: "top 100%",
                     once: true, // Анимация сработает только один раз
                     onEnter: () => button.classList.add('animated')
                 }
