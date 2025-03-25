@@ -1,0 +1,871 @@
+/* Venue Section Styles */
+.venue {
+    background-color: var(--dark-color);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 120px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Particle background */
+.venue-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* Venue content container */
+.venue .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+/* Main content container */
+.venue-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section heading - стиль как в других секциях */
+.section-heading {
+    position: relative;
+    margin-bottom: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.heading-decoration {
+    height: 2px;
+    width: 80px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    transition: opacity 0.8s ease, width 0.8s ease;
+}
+
+.heading-decoration.animated {
+    opacity: 1;
+}
+
+.section-heading h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 30px;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    white-space: normal;
+    box-sizing: border-box;
+    max-width: calc(100% - 60px);
+}
+
+.section-heading h2.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Venue details layout */
+.venue-details {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: start;
+    max-width: 100%;
+}
+
+/* Venue map */
+.venue-map {
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateX(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.venue-map.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.venue-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 72, 255, 0.1), transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Venue description */
+.venue-description {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    transform: translateX(-30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.venue-description.animated {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.venue-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 72, 255, 0.1), transparent 80%);
+    z-index: -1;
+}
+
+.venue-description h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    text-shadow: 0 2px 10px rgba(255, 204, 0, 0.3);
+}
+
+.venue-description p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+}
+
+/* Venue information items */
+.venue-info {
+    margin-bottom: 40px;
+}
+
+.venue-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.venue-info-item i {
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-right: 15px;
+    width: 24px;
+    text-align: center;
+}
+
+.venue-info-item span {
+    font-size: 1.1rem;
+    color: white;
+}
+
+/* Venue button */
+.venue-btn {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: var(--secondary-color);
+    color: var(--dark-color) !important;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(255, 204, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+}
+
+.venue-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.7s ease;
+}
+
+.venue-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(255, 204, 0, 0.5);
+}
+
+.venue-btn:hover::before {
+    left: 100%;
+}
+
+.venue-btn i {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+/* Additional info section */
+.venue-additional {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.info-box {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.info-box:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.info-box:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.info-box:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+.info-box.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info-box-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    background: rgba(0, 72, 255, 0.15);
+    color: var(--secondary-color);
+    font-size: 1.8rem;
+}
+
+.info-box-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.info-box-text {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Decorative elements */
+.venue-decoration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.venue-decoration .circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    animation: float 10s ease-in-out infinite;
+}
+
+.venue-decoration .circle-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: 5%;
+    border-color: rgba(0, 72, 255, 0.1);
+    animation-delay: 0s;
+}
+
+.venue-decoration .circle-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 15%;
+    left: 5%;
+    border-color: rgba(255, 204, 0, 0.1);
+    animation-delay: -3s;
+}
+
+.venue-decoration .circle-3 {
+    width: 150px;
+    height: 150px;
+    bottom: 30%;
+    right: 20%;
+    border-color: rgba(255, 255, 255, 0.1);
+    animation-delay: -5s;
+}
+
+.venue-decoration .animated-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--secondary-color), transparent);
+    animation: moveLine 15s linear infinite;
+}
+
+.venue-decoration .line-1 {
+    width: 30%;
+    top: 25%;
+    left: -30%;
+    animation-delay: 0s;
+}
+
+.venue-decoration .line-2 {
+    width: 20%;
+    bottom: 20%;
+    right: -20%;
+    animation-delay: -7s;
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+@keyframes moveLine {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(1000%);
+    }
+}
+
+/* ================ АДАПТИВНЫЕ СТИЛИ ================ */
+
+/* Desktop Large (1200px и больше) */
+@media screen and (min-width: 1201px) {
+    /* Стандартные стили для крупных экранов, как правило уже определены выше */
+}
+
+/* Desktop Medium (992px - 1200px) */
+@media screen and (max-width: 1200px) {
+    .venue {
+        padding: 100px 0;
+    }
+    
+    .section-heading h2 {
+        font-size: 3.5rem;
+    }
+    
+    .venue-description h3 {
+        font-size: 2.2rem;
+    }
+    
+    .venue-description p {
+        font-size: 1.1rem;
+    }
+    
+    .venue-map {
+        height: 400px;
+    }
+    
+    .venue-info-item span {
+        font-size: 1rem;
+    }
+    
+    .venue-decoration .circle-1 {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Tablet (768px - 992px) */
+@media screen and (max-width: 992px) {
+    .venue {
+        padding: 90px 0;
+        min-height: auto;
+    }
+    
+    .section-heading h2 {
+        font-size: 3rem;
+    }
+    
+    .venue-details {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .venue-map {
+        order: 2;
+        height: 350px;
+    }
+    
+    .venue-description {
+        order: 1;
+    }
+    
+    .venue-description h3 {
+        font-size: 2rem;
+    }
+    
+    .venue-info-item {
+        margin-bottom: 12px;
+    }
+    
+    .venue-additional {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .venue-decoration .circle-1 {
+        width: 200px;
+        height: 200px;
+        top: 15%;
+    }
+    
+    .venue-decoration .circle-3 {
+        display: none;
+    }
+    
+    .venue-decoration .animated-line {
+        width: 15%;
+    }
+}
+
+/* Mobile Large (576px - 768px) */
+@media screen and (max-width: 768px) {
+    .venue {
+        padding: 80px 0;
+    }
+    
+    .venue .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    
+    .section-heading {
+        margin-bottom: 40px;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    
+    .section-heading h2 {
+        font-size: 2.8rem;
+        margin: 0 15px;
+        max-width: calc(100% - 30px);
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    .heading-decoration {
+        width: 60px;
+    }
+    
+    .venue-details {
+        gap: 25px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    /* Важно для решения проблемы */
+    .venue-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .venue-description {
+        padding: 25px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    .venue-description h3 {
+        font-size: 1.8rem;
+    }
+    
+    .venue-description p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .venue-map {
+        height: 300px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    .venue-info-item i {
+        font-size: 1.2rem;
+    }
+    
+    .venue-info-item span {
+        font-size: 0.95rem;
+    }
+    
+    .venue-btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+    
+    /* Фиксируем для мобильных устройств */
+    .venue-decoration .circle {
+        animation-duration: 15s;
+    }
+    
+    .venue-particles {
+        opacity: 0.4;
+    }
+}
+
+/* Mobile Medium (400px - 576px) */
+@media screen and (max-width: 576px) {
+    .venue {
+        padding: 70px 0;
+    }
+    
+    .section-heading h2 {
+        font-size: 2.5rem;
+        margin: 0 10px;
+        max-width: calc(100% - 20px);
+    }
+    
+    .heading-decoration {
+        width: 40px;
+    }
+    
+    .venue-content {
+        padding: 0 15px;
+    }
+    
+    .venue-details {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+    
+    .venue-description {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .venue-description h3 {
+        font-size: 1.6rem;
+    }
+    
+    .venue-map {
+        height: 250px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .venue-decoration .circle-2,
+    .venue-decoration .line-1 {
+        display: none;
+    }
+    
+    .venue-decoration .circle-1 {
+        opacity: 0.5;
+        right: -20px;
+    }
+    
+    .venue-additional {
+        grid-template-columns: 1fr;
+    }
+    
+    .venue-info-item {
+        margin-bottom: 10px;
+    }
+    
+    .venue-btn {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .venue-map,
+    .venue-description {
+        transition: none; /* Отключаем анимацию на мобильных для мгновенного отображения */
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Container fix for small screens */
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 0 15px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .venue-content {
+        padding: 0;
+    }
+    
+    .venue {
+        padding: 60px 0;
+    }
+    
+    .section-heading {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .section-heading h2 {
+        font-size: 2.2rem;
+        margin: 0 8px;
+        max-width: calc(100% - 16px);
+        letter-spacing: 1px;
+    }
+    
+    .heading-decoration {
+        width: 30px;
+    }
+    
+    .venue-description h3 {
+        font-size: 1.4rem;
+    }
+    
+    .venue-description p {
+        font-size: 0.95rem;
+    }
+    
+    .venue-info-item i {
+        font-size: 1.1rem;
+    }
+    
+    .venue-info-item span {
+        font-size: 0.9rem;
+    }
+    
+    .venue-map {
+        height: 200px;
+        border-radius: 15px;
+    }
+    
+    .venue-description,
+    .venue-map {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Ландшафтная ориентация для мобильных устройств */
+@media screen and (max-width: 850px) and (orientation: landscape) {
+    .venue {
+        padding: 60px 0;
+    }
+    
+    .venue-details {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .venue-map {
+        height: 220px;
+    }
+    
+    .venue-description {
+        padding: 20px;
+    }
+    
+    .venue-description h3 {
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    
+    .venue-description p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .venue-info {
+        margin-bottom: 20px;
+    }
+    
+    .venue-info-item {
+        margin-bottom: 8px;
+    }
+    
+    .section-heading {
+        margin-bottom: 30px;
+    }
+    
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Оптимизации для touch-устройств */
+@media (hover: none) {
+    .venue-btn:hover {
+        transform: none;
+        box-shadow: 0 5px 20px rgba(255, 204, 0, 0.3);
+    }
+    
+    .venue-btn:active {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(255, 204, 0, 0.5);
+    }
+    
+    .info-box:hover {
+        transform: none;
+    }
+}
+
+/* Специфичные фиксы для iOS */
+@supports (-webkit-touch-callout: none) {
+    .venue-description {
+        -webkit-backdrop-filter: blur(7px);
+    }
+    
+    .venue-btn {
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+/* Fix для очень узких экранов */
+@media screen and (max-width: 340px) {
+    .venue .container {
+        padding: 0 10px;
+    }
+    
+    .venue-content {
+        padding: 0;
+    }
+    
+    .venue-description {
+        padding: 15px;
+    }
+    
+    .venue-description h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+    
+    .venue-description p {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .venue-info-item {
+        margin-bottom: 8px;
+    }
+    
+    .venue-info-item i {
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    
+    .venue-info-item span {
+        font-size: 0.85rem;
+    }
+    
+    .venue-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .venue-map {
+        height: 180px;
+    }
+    
+    .section-heading h2 {
+        font-size: 2rem;
+        margin: 0 5px;
+        max-width: calc(100% - 10px);
+        letter-spacing: 0.5px;
+    }
+    
+    .heading-decoration {
+        width: 25px;
+    }
+}
+
+/* Явное определение box-sizing для всех элементов секции venue */
+.venue *,
+.venue *:before,
+.venue *:after {
+    box-sizing: border-box;
+}

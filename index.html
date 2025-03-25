@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чемпіонат України U17 - Київ 2025</title>
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/venue.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Подключаем библиотеки -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">U17</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="logo">
+            <h1>U17</h1>
+            <div class="logo-text">
+                <span>Чемпіонат України</span>
+                <span>30.04 - 02.05</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" class="nav-link">Про змагання</a></li>
+                <li><a href="#schedule" class="nav-link">Розклад</a></li>
+                <li><a href="#venue" class="nav-link">Локація</a></li>
+                <li><a href="#contact" class="nav-link">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#about" class="mobile-link">Про змагання</a></li>
+            <li><a href="#schedule" class="mobile-link">Розклад</a></li>
+            <li><a href="#venue" class="mobile-link">Локація</a></li>
+            <li><a href="#contact" class="mobile-link">Контакти</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div id="hero-particles" class="hero-particles"></div>
+        <div class="hero-content">
+            <h1 class="main-title">Чемпіонат України</h1>
+            <div class="title-highlight">
+                <span class="u">U</span>
+                <span class="number">17</span>
+            </div>
+            <div class="hero-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Київ 2025</span>
+            </div>
+            <div class="hero-date">
+                <div class="date-line"></div>
+                <span>30 квітня - 02 травня</span>
+                <div class="date-line"></div>
+            </div>
+            <div id="countdown" class="countdown"></div>
+            <a href="#about" class="hero-btn">
+                Дізнатись більше
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        
+        <div class="hero-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="animated-line line-1"></div>
+            <div class="animated-line line-2"></div>
+            <div class="animated-line line-3"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div id="about-particles" class="about-particles"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-title-container">
+                    <h2 class="about-title">Про змагання</h2>
+                    <div class="title-accent"></div>
+                </div>
+                
+                <div class="about-info">
+                    <div class="about-description">
+                        <p class="animate-text">Запрошуємо на головну подію у світі <strong>юнацької легкої атлетики України</strong> – Чемпіонат України U17, який пройде з 30 квітня по 02 травня 2025 року в Києві.</p>
+                        
+                        <p class="animate-text">Змагання відбудуться в легкоатлетичному манежі <strong>Київської міської школи вищої спортивної майстерності</strong> за адресою: проспект Павла Тичини, 18.</p>
+                        
+                        <p class="animate-text">Чемпіонат стане платформою для молодих талантів з усієї країни, де вони зможуть продемонструвати свої здібності, встановити особисті рекорди та позмагатися за звання найкращих.</p>
+                    </div>
+                    
+                    <div class="about-badge">
+                        <div class="badge-content">
+                            <div class="badge-title">U17</div>
+                            <div class="badge-subtitle">Чемпіонат України</div>
+                            <div class="badge-year">2025</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">300+</div>
+                        <div class="stat-label">Заявленно учасників</div>
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Участники з областей</div>
+                        <div class="stat-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Клубів та команд</div>
+                        <div class="stat-icon"><i class="fas fa-running"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="animated-line line-1"></div>
+            <div class="animated-line line-2"></div>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule">
+        <div id="schedule-particles" class="schedule-particles"></div>
+        <div class="container">
+            <div class="schedule-title-container">
+                <h2 class="schedule-title">Розклад змагань</h2>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="schedule-content">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-day="1">День 1</button>
+                    <button class="tab-btn" data-day="2">День 2</button>
+                    <button class="tab-btn" data-day="3">День 3</button>
+                </div>
+                
+                <div class="tab-contents">
+                    <div class="tab-content active" data-day="1">
+                        <div class="day-header">
+                            <div class="day-number">01</div>
+                            <div class="day-info">
+                                <h3>30 квітня</h3>
+                                <p>День приїзду і реєстрації</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-event">
+                                <div class="event-time">11:00 - 15:00</div>
+                                <div class="event-content">
+                                    <h4>Мандатна комісія</h4>
+                                    <p>Конференц-зал готелю «Турист»</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">16:00 - 16:30</div>
+                                <div class="event-content">
+                                    <h4>Засідання суддів</h4>
+                                    <p>Конференц-зал готелю «Турист»</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">17:00 - 18:00</div>
+                                <div class="event-content">
+                                    <h4>Офіційне зважування учасників</h4>
+                                    <p>
+                                        <span class="weight-category">Юнаки:</span> 42 кг, 46 кг, 50 кг, 55 кг, 60 кг<br>
+                                        <span class="weight-category">Дівчата:</span> 40 кг, 44 кг, 48 кг, 52 кг, 57 кг
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">18:30 - 20:00</div>
+                                <div class="event-content">
+                                    <h4>Засідання представників команд</h4>
+                                    <p>Жеребкування учасників вагових категорій першого дня змагання (форма одягу цивільний костюм, краватка, конференц-зал готелю «Турист»)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" data-day="2">
+                        <div class="day-header">
+                            <div class="day-number">02</div>
+                            <div class="day-info">
+                                <h3>1 травня</h3>
+                                <p>Кваліфікаційні та фінальні змагання</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-event">
+                                <div class="event-time">09:00</div>
+                                <div class="event-content">
+                                    <h4>Загальнонаціональна хвилина мовчання</h4>
+                                    <p>За співвітчизниками, загиблими внаслідок збройної агресії російської федерації проти України</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">09:05</div>
+                                <div class="event-content">
+                                    <h4>Початок змагання у вагових категоріях</h4>
+                                    <p>
+                                        <span class="weight-category">Юнаки:</span> 42 кг, 46 кг, 50 кг, 55 кг, 60 кг<br>
+                                        <span class="weight-category">Дівчата:</span> 40 кг, 44 кг, 48 кг, 52 кг
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">12:00</div>
+                                <div class="event-content special-event">
+                                    <h4>Урочисте відкриття змагання</h4>
+                                    <p>Церемонія офіційного відкриття чемпіонату</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">14:00 - 18:00</div>
+                                <div class="event-content">
+                                    <h4>Фінальний блок та нагородження</h4>
+                                    <p>Після закінчення попередніх сутичок - фінальні поєдинки та нагородження переможців і призерів</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">19:00 - 20:00</div>
+                                <div class="event-content">
+                                    <h4>Офіційне зважування учасників</h4>
+                                    <p>
+                                        <span class="weight-category">Юнаки:</span> 66 кг, 73 кг, 81 кг, +81 кг<br>
+                                        <span class="weight-category">Дівчата:</span> 57 кг, 63 кг, +63 кг<br>
+                                        <span class="location">Місце: легкоатлетичний манеж</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">20:00</div>
+                                <div class="event-content">
+                                    <h4>Жеребкування</h4>
+                                    <p>Жеребкування учасників вагових категорій другого дня змагання</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" data-day="3">
+                        <div class="day-header">
+                            <div class="day-number">03</div>
+                            <div class="day-info">
+                                <h3>2 травня</h3>
+                                <p>Фінальні змагання</p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-event">
+                                <div class="event-time">09:00</div>
+                                <div class="event-content">
+                                    <h4>Загальнонаціональна хвилина мовчання</h4>
+                                    <p>За співвітчизниками, загиблими внаслідок збройної агресії російської федерації проти України</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">09:05</div>
+                                <div class="event-content">
+                                    <h4>Початок змагання у вагових категоріях</h4>
+                                    <p>
+                                        <span class="weight-category">Юнаки:</span> 66 кг, 73 кг, 81 кг, +81 кг<br>
+                                        <span class="weight-category">Дівчата:</span> 57 кг, 63 кг, +63 кг
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">14:00 - 16:00</div>
+                                <div class="event-content">
+                                    <h4>Фінальний блок</h4>
+                                    <p>Після закінчення попередніх сутичок - фінальні поєдинки</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">16:30 - 17:30</div>
+                                <div class="event-content special-event">
+                                    <h4>Церемонія нагородження</h4>
+                                    <p>Урочисте нагородження переможців і призерів другого дня змагань</p>
+                                </div>
+                            </div>
+                            <div class="timeline-event">
+                                <div class="event-time">18:00</div>
+                                <div class="event-content">
+                                    <h4>Закриття чемпіонату</h4>
+                                    <p>Офіційне закриття змагань та від'їзд учасників</p>
+                                    <div class="note">Програма змагання може бути змінена за рішенням суддівської колегії</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="schedule-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="animated-line line-1"></div>
+            <div class="animated-line line-2"></div>
+        </div>
+    </section>
+
+    <section id="venue" class="venue">
+        <div id="venue-particles" class="venue-particles"></div>
+        <div class="container">
+            <div class="section-heading">
+                <div class="heading-decoration"></div>
+                <h2>Місце проведення</h2>
+                <div class="heading-decoration"></div>
+            </div>
+            <div class="venue-content">
+                <div class="venue-details">
+                    <div class="venue-description">
+                        <h3>Легкоатлетичний манеж</h3>
+                        <p>Київська міська школа вищої спортивної майстерності</p>
+                        <div class="venue-info">
+                            <div class="venue-info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>проспект Павла Тичини, 18, м. Київ</span>
+                            </div>
+                            <div class="venue-info-item">
+                                <i class="fas fa-subway"></i>
+                                <span>Метро Лівобережна</span>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com/?q=50.4277,30.5963" class="btn venue-btn" target="_blank">
+                            <span>Переглянути на карті</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                    <div class="venue-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.827856863426!2d30.59381257687316!3d50.427660071606506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1c006f2a3f%3A0x77d8e4c1530185f8!2z0L_RgNC-0YHQvy4g0J_QsNCy0LvQsCDQotGL0YfQuNC90YssIDE4LCDQmtC40LXQsiwgMDIwOTk!5e0!3m2!1sru!2sua!4v1686245967273!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="venue-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="animated-line line-1"></div>
+            <div class="animated-line line-2"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div id="contact-particles" class="contact-particles"></div>
+        <div class="container">
+            <div class="section-heading">
+                <div class="heading-decoration"></div>
+                <h2>Контактна інформація</h2>
+                <div class="heading-decoration"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Організатор</h3>
+                            <p>Коломієць Олег</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+380677326199">067 732 61 99</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h3>Email</h3>
+                            <p><a href="mailto:judoukr@ukr.net">judoukr@ukr.net</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-cta">
+                    <h3>Слідкуйте за оновленнями</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-decoration">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <!-- Основной контент футера -->
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1>U17</h1>
+                    <div class="logo-text">
+                        <span>Чемпіонат України</span>
+                        <span>30.04 - 02.05</span>
+                    </div>
+                </div>
+                <div class="footer-right-column">
+                    <div class="footer-links">
+                        <a href="#about">Про змагання</a>
+                        <a href="#schedule">Розклад</a>
+                        <a href="#venue">Локація</a>
+                        <a href="#contact">Контакти</a>
+                    </div>
+                    <div class="partners-grid">
+                        <div class="partner-item extra-large">
+                            <img src="images/mms.png" alt="MMS" class="partner-logo">
+                        </div>
+                        <div class="partner-item large">
+                            <img src="images/nocu.png" alt="NOCU" class="partner-logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h3 class="footer-heading">Слідкуйте за ФДУ</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/UkraineJudoFederation" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ukraine_judo_official/" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCZrEPgMGSORoy1SIeBf_QMg" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://t.me/ukrainianjudofederation" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                    </div>
+                  </div>
+            </div>
+            
+            <!-- Копирайт -->
+            <div class="copyright"></div>
+        </div>
+        
+        <!-- Декоративные элементы -->
+        <div class="footer-circle-1"></div>
+        <div class="footer-circle-2"></div>
+        <div class="footer-line"></div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html> 
