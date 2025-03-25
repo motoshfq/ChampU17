@@ -210,12 +210,12 @@ footer::after {
 
 /* Desktop Medium (992px - 1200px) */
 @media screen and (max-width: 1200px) {
-    .footer-logo-text {
+    .footer-logo h1 {
         font-size: 3.5rem;
     }
     
-    .footer-logo p {
-        font-size: 1rem;
+    .footer-logo .logo-text {
+        font-size: 0.9rem;
     }
     
     .footer-links a {
@@ -227,15 +227,9 @@ footer::after {
         height: 150px;
     }
     
-    .footer-logo-fdu {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .footer-logo-text::before {
-        width: 75px;
-        height: 75px;
-        left: -85px;
+    .partner-item.extra-large .partner-logo {
+        max-height: 16rem;
+        min-height: 16rem;
     }
 }
 
@@ -248,37 +242,46 @@ footer::after {
     .footer-content {
         flex-direction: column;
         align-items: center;
-        text-align: center;
         gap: 30px;
     }
     
     .footer-logo {
-        flex-direction: column;
-        gap: 15px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     
-    .footer-logo-text {
-        font-size: 3.5rem;
+    .footer-right-column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     .footer-links {
         justify-content: center;
+        margin-bottom: 25px;
     }
     
-    .footer-circle-2,
-    .footer-line {
-        display: none;
+    .footer-social {
+        margin-top: 30px;
     }
     
-    .footer-logo-fdu {
-        width: 60px;
-        height: 60px;
+    .footer-heading {
+        text-align: center;
     }
     
-    .footer-logo-text::before {
-        width: 65px;
-        height: 65px;
-        left: -75px;
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .partners-grid {
+        justify-content: center;
+    }
+    
+    .partner-item.extra-large .partner-logo {
+        max-height: 14rem;
+        min-height: 14rem;
     }
 }
 
@@ -288,19 +291,19 @@ footer::after {
         padding: 40px 0 20px;
     }
     
-    .footer-logo-text {
+    .footer-logo h1 {
         font-size: 3rem;
     }
     
     .footer-links {
-        gap: 20px;
+        gap: 15px;
     }
     
     .footer-links a {
         font-size: 0.95rem;
     }
     
-    .copyright p {
+    .copyright {
         font-size: 0.85rem;
     }
     
@@ -310,40 +313,45 @@ footer::after {
         opacity: 0.5;
     }
     
-    .footer-logo-fdu {
-        width: 50px;
-        height: 50px;
+    .social-icons {
+        gap: 10px;
     }
     
-    .footer-logo-text::before {
-        width: 55px;
-        height: 55px;
-        left: -65px;
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .partner-item.extra-large .partner-logo {
+        max-height: 10rem;
+        min-height: 10rem;
+    }
+    
+    .partner-item.large .partner-logo {
+        max-height: 70px;
     }
 }
 
 /* Mobile Medium (400px - 576px) */
 @media screen and (max-width: 576px) {
-    .footer-logo-text {
-        font-size: 2.8rem;
+    .footer-logo h1 {
+        font-size: 2.6rem;
     }
     
-    .footer-logo p {
-        font-size: 0.9rem;
+    .footer-logo .logo-text {
+        font-size: 0.8rem;
     }
     
     .footer-links {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 15px;
-        align-items: center;
     }
     
     .footer-links a {
         font-size: 0.9rem;
-    }
-    
-    .footer-links a::after {
-        display: none;
+        padding: 5px 10px;
     }
     
     .copyright {
@@ -354,44 +362,111 @@ footer::after {
         display: none;
     }
     
-    .footer-logo {
+    .footer-heading {
+        font-size: 1.1rem;
+    }
+    
+    .social-icon {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .partner-item.extra-large .partner-logo {
+        max-height: 8rem;
+        min-height: 8rem;
+    }
+    
+    .partner-item.large .partner-logo {
+        max-height: 60px;
+    }
+    
+    .partners-grid {
         gap: 10px;
-    }
-    
-    .footer-logo-fdu {
-        width: 45px;
-        height: 45px;
-    }
-    
-    .footer-logo-text::before {
-        width: 50px;
-        height: 50px;
-        top: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    
-    .footer-logo:hover .footer-logo-text::before {
-        transform: translateX(-50%) rotate(10deg);
     }
 }
 
-/* Container fix for small screens */
+/* Small Mobile (320px - 400px) */
 @media screen and (max-width: 400px) {
     footer .container {
         padding: 0 10px;
     }
     
-    .footer-logo-text {
-        font-size: 2.5rem;
+    .footer-logo h1 {
+        font-size: 2.2rem;
     }
     
-    .footer-logo p {
+    .footer-logo .logo-text {
+        font-size: 0.75rem;
+    }
+    
+    .footer-links a {
         font-size: 0.85rem;
+    }
+    
+    .footer-social {
+        margin-top: 20px;
+    }
+    
+    .social-icons {
+        gap: 8px;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    
+    .partner-item.extra-large .partner-logo {
+        max-height: 6rem;
+        min-height: 6rem;
+    }
+    
+    .partner-item.large .partner-logo {
+        max-height: 50px;
+    }
+    
+    .partners-grid {
+        gap: 8px;
+    }
+    
+    .footer-heading {
+        font-size: 1rem;
     }
 }
 
-/* Hover Effects for touch devices */
+/* Коррекция для крайне малых экранов */
+@media screen and (max-width: 360px) {
+    .footer-logo {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .footer-logo h1 {
+        font-size: 2rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .partner-item.extra-large .partner-logo {
+        max-height: 5rem;
+        min-height: 5rem;
+    }
+}
+
+/* Исправление резкого перехода для right-column */
+@media screen and (max-width: 992px) {
+    .footer-right-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Hover Effects для touch devices */
 @media (hover: none) {
     .footer-links a:hover {
         transform: none;
@@ -399,6 +474,23 @@ footer::after {
     
     .footer-links a:active {
         color: var(--secondary-color);
+    }
+    
+    .social-icon:hover {
+        transform: none;
+    }
+    
+    .social-icon:active {
+        background-color: var(--secondary-color);
+        color: #111827;
+    }
+    
+    .partner-item:hover {
+        transform: none;
+    }
+    
+    .partner-item:active {
+        transform: translateY(-3px);
     }
 }
 
